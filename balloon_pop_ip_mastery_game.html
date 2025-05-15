@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Addressing Mastery Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Baloo 2', cursive;
+            background-color: #f0f9ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        .game-container {
+            background-color: white;
+            padding:clamp(15px, 5vw, 25px);
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            width: 95%;
+            max-width: 800px;
+            text-align: center;
+        }
+        .stats-area {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+            font-weight: 600;
+            color: #374151; /* Gray-700 */
+        }
+        .timer-area {
+            font-size: clamp(1.1rem, 3vw, 1.5rem);
+            font-weight: 700;
+            color: #ef4444;
+        }
+        .questions-left-area {
+             color: #1d4ed8; /* Blue-700 */
+        }
+        .question-area {
+            font-size: clamp(1rem, 3vw, 1.3rem);
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+            min-height: 70px;
+            line-height: 1.4;
+            word-wrap: break-word;
+        }
+        .balloons-container {
+            display: flex;
